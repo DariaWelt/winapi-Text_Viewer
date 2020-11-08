@@ -1,0 +1,87 @@
+# depslib dependency file v1.0
+1604850375 source:d:\documents\study\programming\ivankov\interfaces\text viewer\main.c
+	"header.h"
+	"menu.h"
+	<tchar.h>
+	<windows.h>
+	<stdio.h>
+	<scrnsave.h>
+
+1604849504 d:\documents\study\programming\ivankov\interfaces\text viewer\header.h
+	<wingdi.h>
+	<afxres.h>
+	"model.h"
+	"viewer.h"
+
+1604850716 d:\documents\study\programming\ivankov\interfaces\text viewer\model.h
+
+1604848097 d:\documents\study\programming\ivankov\interfaces\text viewer\viewer.h
+
+1604146931 d:\documents\study\programming\ivankov\interfaces\text viewer\menu.h
+
+1604146948 source:d:\documents\study\programming\ivankov\interfaces\text viewer\menu.rc
+	"menu.h"
+
+1604850116 source:d:\documents\study\programming\ivankov\interfaces\text viewer\model.c
+	"header.h"
+	<stdio.h>
+	<stdlib.h>
+
+1604850395 source:d:\documents\study\programming\ivankov\interfaces\text viewer\reactchanges.c
+	<windef.h>
+	<winuser.h>
+	<afxres.h>
+	"header.h"
+	"menu.h"
+	<commdlg.h>
+	<stdio.h>
+
+1604849536 source:d:\documents\study\programming\ivankov\interfaces\text viewer\viewer.c
+	"header.h"
+	<windows.h>
+	<limits.h>
+	<math.h>
+
+1604866173 source:d:\documents\study\programming\ivankov\interfaces\textviewer\main.c
+	"header.h"
+	"menu.h"
+	<tchar.h>
+	<windows.h>
+	<stdio.h>
+	<scrnsave.h>
+
+1604866173 d:\documents\study\programming\ivankov\interfaces\textviewer\header.h
+	<wingdi.h>
+	<afxres.h>
+	"model.h"
+	"viewer.h"
+
+1604850716 d:\documents\study\programming\ivankov\interfaces\textviewer\model.h
+
+1604867904 d:\documents\study\programming\ivankov\interfaces\textviewer\viewer.h
+
+1604146931 d:\documents\study\programming\ivankov\interfaces\textviewer\menu.h
+
+1604146948 source:d:\documents\study\programming\ivankov\interfaces\textviewer\menu.rc
+	"menu.h"
+
+1604870344 source:d:\documents\study\programming\ivankov\interfaces\textviewer\model.c
+	"header.h"
+	<stdio.h>
+	<stdlib.h>
+
+1604870212 source:d:\documents\study\programming\ivankov\interfaces\textviewer\reactchanges.c
+	<windef.h>
+	<winuser.h>
+	<afxres.h>
+	"header.h"
+	"menu.h"
+	<commdlg.h>
+	<stdio.h>
+
+1604870462 source:d:\documents\study\programming\ivankov\interfaces\textviewer\viewer.c
+	"header.h"
+	<windows.h>
+	<limits.h>
+	<math.h>
+
