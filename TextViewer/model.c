@@ -5,37 +5,16 @@
 #include "header.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "libs/main.h"
 
-ULONG GetSizeOfFile(const char* const fileName) {
-    if (fileName == NULL)
-        return 0;
-    FILE* file = fopen(fileName, "rb");
-    if(file == NULL) {
-        return 0;
-    }
-    fseek(file, 0, SEEK_END);
-    ULONG size = ftell(file);
-    fclose(file);
-    return size;
-}
-
-void readFile(const char* const fileName, model_t* const model) {
-    if (model == NULL)
-        return;
+void BuildModel(const char* const fileName, model_t* const model) {
     ULONG sizeText = GetSizeOfFile(fileName);
-    if (sizeText == 0) {
+    if (sizeText == 0){
         model->arraySize = 0;
         return;
     }
-
     char* rawData = (char*) calloc (sizeof(char), sizeText);
-    FILE* file = fopen( fileName, "rb" );
-    if (rawData == NULL || file == NULL) {
-        model->arraySize = 0;
-        return;
-    }
-    fread( rawData, 1, sizeText, file );
-    fclose(file);
+    readFile(fileName, rawData);
     model->arraySize = 0;
     model->charArray = NULL;
     for (UINT i = 0; i < sizeText - 1; ++i) {
@@ -59,7 +38,7 @@ void __init__(model_t* const model, const char* const fileName, viewerText_t* co
     model->lengthLast = 0;
     model->max_size_elem = 0;
     model->charArray = NULL;
-    readFile(fileName, model);
+    BuildModel(fileName, model);
     ModelSetMaxSizeElem(model);
     // инициализация вьювера
     viewer->width = 0;

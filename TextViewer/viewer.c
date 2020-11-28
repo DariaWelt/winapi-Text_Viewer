@@ -15,7 +15,7 @@ int ViewerIsInvalidate(const viewerText_t* const viewer) {
 void SetViewerSize (viewerText_t* const viewer, SIZE rect, const TEXTMETRIC textInfo) {
     if (viewer == NULL)
         return;
-    viewer->width = (int) (rect.cx / textInfo.tmAveCharWidth);
+    viewer->width = (int) (rect.cx / textInfo.tmAveCharWidth) - 1;
     viewer->height = (int) (rect.cy / (textInfo.tmHeight + textInfo.tmInternalLeading));
 }
 
@@ -72,6 +72,8 @@ int GetScrollKoeff(const viewerText_t* viewer, UINT scrollMode) {
 
 long CountRowsGap(viewerText_t* viewer, mode_t mode) {
     if (viewer == NULL || viewer->model_1 == NULL)
+        return 0;
+    if (viewer->firstRow == 0)
         return 0;
     long scrollGapSize = 0;
     model_t model = *viewer->model_1;

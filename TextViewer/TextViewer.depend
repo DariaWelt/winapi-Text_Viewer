@@ -56,7 +56,7 @@
 	"model.h"
 	"viewer.h"
 
-1604850716 d:\documents\study\programming\ivankov\interfaces\textviewer\model.h
+1605347538 d:\documents\study\programming\ivankov\interfaces\textviewer\model.h
 
 1604867904 d:\documents\study\programming\ivankov\interfaces\textviewer\viewer.h
 
@@ -65,12 +65,13 @@
 1604146948 source:d:\documents\study\programming\ivankov\interfaces\textviewer\menu.rc
 	"menu.h"
 
-1604870344 source:d:\documents\study\programming\ivankov\interfaces\textviewer\model.c
+1605349191 source:d:\documents\study\programming\ivankov\interfaces\textviewer\model.c
 	"header.h"
 	<stdio.h>
 	<stdlib.h>
+	"libs/main.h"
 
-1604870212 source:d:\documents\study\programming\ivankov\interfaces\textviewer\reactchanges.c
+1604870590 source:d:\documents\study\programming\ivankov\interfaces\textviewer\reactchanges.c
 	<windef.h>
 	<winuser.h>
 	<afxres.h>
@@ -79,7 +80,57 @@
 	<commdlg.h>
 	<stdio.h>
 
-1604870462 source:d:\documents\study\programming\ivankov\interfaces\textviewer\viewer.c
+1606550807 source:d:\documents\study\programming\ivankov\interfaces\textviewer\viewer.c
+	"header.h"
+	<windows.h>
+	<limits.h>
+	<math.h>
+
+1605347303 d:\documents\study\programming\ivankov\interfaces\textviewer\libs\main.h
+	<windows.h>
+
+1604866173 source:d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\main.c
+	"header.h"
+	"menu.h"
+	<tchar.h>
+	<windows.h>
+	<stdio.h>
+	<scrnsave.h>
+
+1604866173 d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\header.h
+	<wingdi.h>
+	<afxres.h>
+	"model.h"
+	"viewer.h"
+
+1605347538 d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\model.h
+
+1604867904 d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\viewer.h
+
+1604146931 d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\menu.h
+
+1604146948 source:d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\menu.rc
+	"menu.h"
+
+1605349191 source:d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\model.c
+	"header.h"
+	<stdio.h>
+	<stdlib.h>
+	"libs/main.h"
+
+1605347303 d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\libs\main.h
+	<windows.h>
+
+1604870590 source:d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\reactchanges.c
+	<windef.h>
+	<winuser.h>
+	<afxres.h>
+	"header.h"
+	"menu.h"
+	<commdlg.h>
+	<stdio.h>
+
+1606548402 source:d:\documents\study\programming\ivankov\interfaces\интерфейсы Даша\textviewer\viewer.c
 	"header.h"
 	<windows.h>
 	<limits.h>

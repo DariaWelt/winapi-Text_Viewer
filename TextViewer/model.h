@@ -21,7 +21,7 @@ typedef struct {
  * @param model         указатель на модель, которую мы инициализируем
  * @return код ошибки
  */
-void readFile(const char* const fileName, model_t* const model);
+void BuildModel(const char* const fileName, model_t* const model);
 
 /**
  * @brief Отчистка памяти, выделенной под модель
